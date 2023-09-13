@@ -8,7 +8,7 @@ To install this project simply clone the repository and then open code with the 
 
 https://t0ny-macaroni.github.io/Quiz-Project/
 
-![Alt text](assets/screencapture-file-D-Bootcamp-Quiz-Project-index-html-2023-07-08-15_18_05.png)
+![Alt text](assets/Screenshot_75.png)
 
 ## Usage
 

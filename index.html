@@ -6,77 +6,49 @@
     
     <link rel="stylesheet" href="./assets/style.css"/>
 
-    <title>Coding Quiz</title>
+    <title>Code Quiz</title>
 </head>
 
 <body>
-    <header>
-    <!-- Display high score and timer on top left and right corners respectively -->
-    <section id = "score_keeper" style="display: none">
-        <input type="button" value="View High Scores" onclick="view_high_scores()"></br>
-        Score: <var id="score"> </var>
-    </section>
-
-    <section id= "countdownTimer" style="display: none">
-        Time Remaining: <span id="timer"></span>
-    </section>
-
+    <header class="header">
+        <h1 id="title">Code Quiz</h1>
+        <p id="intro">Welcome to my coding quiz Gamer! Are you ready to test your skills and see if you have what it takes to call yourself a dev? Step right up and flex your brain</p>
     </header>
+    <div id="quiz-display">
+        <div>
+            <div id="timer">
+                <span class="time-left">60s</span>
+            </div>
+                <div id='question'>
+                    <!--Question here-->
+                </div>
 
-
-    <!-- Home Container with quiz rules and Start button -->
-    <container>
-    <div id="information">
-        <h1>Welcome to the Code Quiz!</h1>
-        <p>Try answering the following code-related questions within the time limit. You have 75 seconds to complete the quiz.</p> 
-        <p> Don't forget: For each incorrect answer, you will be penalized 5 seconds from the timer. If the timer hits 0, it's game over!</p>
-        <p><strong>Ready to test your coding knowledge? Let's get started!</strong></p>
-        <br>
-        <button id="startBtn">Start Quiz</button>
-    </div>
-    </container>
-
-        <!-- QUIZ CONTAINER -->
-        <div id="quizContainer" style="display: none"> 
-            <h2 id="questionHeading"></h2>
-            <!-- <div id="answerChoices"> -->
-                <ul>
-                    <div id="choices">
-                        <button id="answerChoiceA"></button>
-                    </div>
-                    <div>
-                        <button id="answerChoiceB"></button>
-                    </div>
-                    <div>
-                        <button id="answerChoiceC"></button>
-                    </div>
-                    <div>
-                        <button id="answerChoiceD"></button>
-                    </div>
+                <ul id='choices'>
+                    <!--Choices Here-->
                 </ul>
             </div>
-</body>
-
-<!-- RESULTS & HIGH SCORES CONTAINER -->
-<section id="AnswerResponse">
-</section>
-
-<div id= "game_over" style="display: none">
-    <h2> Game Over</h2>
-    Your Score was: <var id="end_score"> </var>
-    </br>
-    Initials: <input type="text"  value="initials" id="initials">
-    </br>
-    <input type="button" value="submit" id="submit_intials" onclick="submit_score()">
-</div>
-
-<div id="high_scores_page" style="display: none" >
-    <h2> High Scores </h2>
-    <div id="high_scores"></div>
-        <input type="button" value="Go Back" id="go_back" onclick="go_home()">
-        <input type="button" id="Clear Highscores" value ="clear" onclick="clear_hs()">
-    </div>
-
+            <div class="buttons">
+                <button id="start-button">
+                    Begin
+                </button>
+                <button id="next-quest">
+                    Next Question
+                </button>
+                <button id="submit-quiz">
+                    Submit
+                </button>
+                <button id="highscores">
+                    Highscores
+                </button>
+            </div>
+            <div id="scoreContainer">
+                <span id="currentScore">0</span>
+            </div>
+            <div class="user-input">
+                <input type="text" id="user" placeholder="Please Identify Yourself">
+            </div>
+        </div>
     <script src="./assets/script.js"></script>
+</body>
 
 </html> 
